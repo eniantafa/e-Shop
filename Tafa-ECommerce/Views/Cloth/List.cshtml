@@ -1,0 +1,15 @@
+﻿
+
+<div>
+    <h2>All clothes are shown here</h2>
+</div>
+
+<h2>@Model.CurrentCategory</h2>
+
+@{
+    foreach (Cloth cloth in Model.Clothes)
+    {
+        @Html.Partial("ClothesSummary", cloth)
+    }
+}
+
